@@ -7,8 +7,15 @@
     "test": "mocha --colors --recursive './test/**/*.test.js'"
   },
   "main": "./src/index.js",
-  "private": true,
-  "keywords": [],
+  "keywords": [
+    "atlassubbed",
+    "mocha",
+    "utils",
+    "utility",
+    "cleanup",
+    "testing",
+    "tests"
+  ],
   "author": "atlassubbed <atlassubbed@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
