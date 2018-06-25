@@ -45,7 +45,7 @@ describe("cat", function(){
 Fixing this isn't too difficult to do inside your tests, but I like to keep a clean house. Additionally, mocking standard output is pretty avoidable. By using a wrapper (e.g. a Logger) around `console.log` or `process.stdout`, you can easily mock your application's logging functionality. For simple stuff though, using a special logger feels uneccesary.
 
 
-## example
+## examples
 
 This package lets you run a cleanup function *after* your test runs, but *before* `afterEach` runs. This way, your home stays clean before mocha gets invited over:
 
