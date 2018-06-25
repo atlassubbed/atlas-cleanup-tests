@@ -44,12 +44,11 @@ describe("cat", function(){
 
 Fixing this isn't too difficult to do inside your tests, but I like to keep a clean house. Additionally, mocking standard output is pretty avoidable. By using a wrapper (e.g. a Logger) around `console.log` or `process.stdout`, you can easily mock your application's logging functionality. For simple stuff though, using a special logger feels uneccesary.
 
+This package gives you a cleanup function which runs *after* your test runs, but *before* `afterEach` runs. This way, your home stays clean before mocha gets invited over.
 
 ## examples
 
-This package lets you run a cleanup function *after* your test runs, but *before* `afterEach` runs. This way, your home stays clean before mocha gets invited over:
-
-### without `done` callback
+#### without `done` callback
 
 ```javascript
 // Animal.test.js
@@ -72,9 +71,9 @@ describe("cat", function(){
 })
 ```
 
-Even if your test is sync, mocha's `done` callback can be used to test (partial) code-paths. The `cleanup` function will also be able to wrap these tests without any work on your part:
+#### with `done` callback
 
-### with `done` callback
+Even if your test is sync, mocha's `done` callback can be used to test (partial) code-paths. The `cleanup` function will also be able to wrap these tests without any work on your part:
 
 ```javascript
 // Animal.test.js
