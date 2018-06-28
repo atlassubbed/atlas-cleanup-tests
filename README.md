@@ -2,6 +2,8 @@
 
 Seamlessly wrap sync mocha tests with your cleanup script. Supports 'done' callback.
 
+[![Travis](https://img.shields.io/travis/atlassubbed/atlas-cleanup-tests.svg)](https://travis-ci.org/atlassubbed/atlas-cleanup-tests)
+
 ---
 
 ## install
