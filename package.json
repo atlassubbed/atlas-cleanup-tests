@@ -1,6 +1,6 @@
 {
   "name": "atlas-cleanup-tests",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Seamlessly wrap sync mocha tests with your cleanup script. Supports 'done' callback.",
   "scripts": {
     "test-server": "mocha --colors --watch --recursive './test/**/*.test.js'",
